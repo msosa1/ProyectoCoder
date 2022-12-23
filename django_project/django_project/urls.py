@@ -18,7 +18,7 @@ from django.urls import path
 
 from django_project.views import hola_mundo, fecha_actual, vista_con_edad, vista_con_template, saludo_desde_template
 
-from products.views import create_product, list_products
+from products.views import create_product, list_products,create_category, list_categories
 
 
 
@@ -31,5 +31,9 @@ urlpatterns = [
     path('saludo_desde_template/', saludo_desde_template),
     
     path('create-product/', create_product),
-    path('list-product/', list_products)
+    path('list-product/', list_products),
+    
+    path('create-category/<str:name/', create_category),
+    path('list-category/', list_categories),
+    
 ]
