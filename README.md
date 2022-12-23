@@ -1,2 +1,0 @@
-# ProyectoCoder
-Proyecto Python CoderHouse
