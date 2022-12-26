@@ -11,8 +11,9 @@
     <ul>
     {% for member in family_members %}
         <p><h3 style="color: green;" >{{ member.name }}</h3></p>
-        <p>Su edad es:  {{ member.age }} años</p>
         <p>Es mi:  {{ member.relationship }}</p>
+        <p>Su edad es de:  {{ member.age }} años</p>
+       
     {% endfor %}
     </ul>
 </body>
