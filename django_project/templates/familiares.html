@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Estos son los miembros de mi familia: </h1>
+    <h1> <b></b>Estos son los miembros de mi familia:</b> </h1>
     <ul>
     {% for member in family_members %}
-        <p><h3 style="color: green;" >{{ member.name }}</h3></p>
-        <p>Es mi:  {{ member.relationship }}</p>
-        <p>Su edad es de:  {{ member.age }} años</p>
+        <p> <b><h3 style="color: green;" >{{ member.name }}</h3> </b> </p>
+        <p>Es mi: <b>  {{ member.relationship }} </b></p>
+        <p>Su edad es de:  <b> {{ member.age }} </b>años</p>
        
     {% endfor %}
     </ul>
