@@ -16,24 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from django_project.views import hola_mundo, fecha_actual, vista_con_edad, vista_con_template, saludo_desde_template
-
-from products.views import create_product, list_products,create_category, list_categories
-
+from django_project.views import family_list
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Hola/', hola_mundo ),
-    path('fecha/', fecha_actual),
-    path('edad/<int:edad>/', vista_con_edad),
-    path('vista_con_template/', vista_con_template),
-    path('saludo_desde_template/', saludo_desde_template),
+    #path('Hola/', hola_mundo ),
+    #path('fecha/', fecha_actual),
+    #path('edad/<int:edad>/', vista_con_edad),
+    #path('vista_con_template/', vista_con_template),
+    #path('saludo_desde_template/', saludo_desde_template),
     
-    path('create-product/', create_product),
-    path('list-product/', list_products),
+    #path('create-product/', create_product),
+    #path('list-product/', list_products),
+    path('family/',family_list),
     
-    path('create-category/<str:name/', create_category),
-    path('list-category/', list_categories),
-    
+
 ]
